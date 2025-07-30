@@ -1,0 +1,112 @@
+/* src/styles/Dashboard.css */
+
+/* Background: Modern soft blue gradient */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef2f3 0%, #c4e0e5 100%);
+  min-height: 100vh;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+/* Main dashboard card, bigger and more professional */
+.dashboard-container {
+  padding: 36px 18px 60px 18px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 14px;
+  max-width: 1500px;
+  box-shadow: 0 8px 40px rgba(33, 97, 140, 0.10);
+  min-height: 85vh;
+}
+
+/* Main title */
+h1, .dashboard-title {
+  text-align: center;
+  color: #2d3648;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+/* AG Grid table visual styles */
+.ag-theme-alpine {
+  min-width: 1000px;
+  min-height: 700px;
+  font-size: 0.97rem; /* default cell font */
+  border-radius: 10px;
+  box-shadow: 0 4px 28px rgba(44, 62, 80, 0.14);
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 40px;
+}
+
+.ag-header {
+  background: linear-gradient(90deg, #1976d2 40%, #21c1d6 100%) !important;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.01rem;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', Arial, sans-serif;
+  min-height: 70px !important;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+/* Big, professional header font */
+.ag-header-cell-label .ag-header-cell-text {
+  white-space: normal !important;
+  overflow: visible !important;
+  font-size: 1.35rem !important;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  color: #21436b;
+  letter-spacing: 0.5px;
+  line-height: 1.18;
+  word-break: break-word;
+}
+
+/* Cell (value) font: smaller for contrast and clarity */
+.ag-cell, .ag-floating-filter {
+  font-size: 0.97rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Special font for status icons */
+.ag-cell .ag-cell-value {
+  font-size: 1.25rem;
+}
+
+.ag-cell .ag-cell-value:contains('✅') { color: #27ae60; }
+.ag-cell .ag-cell-value:contains('❌') { color: #c0392b; }
+
+/* Row hover: subtle blue highlight */
+.ag-row:hover {
+  background-color: #e3f2fd !important;
+}
+
+/* Paging controls: subtle styling */
+.ag-paging-panel {
+  background: #f2f2fa;
+  border-top: 1.5px solid #deecf9;
+  font-weight: 500;
+  color: #1976d2;
+}
+
+/* Prevent AG Grid overflow from obscuring columns */
+.ag-center-cols-clipper, .ag-center-cols-container {
+  overflow-x: auto !important;
+}
+
+
+.metrics-row {
+  display: flex;
+  gap: 28px;           /* Adds space between cards */
+  margin-bottom: 28px; /* Adds space below metrics and above grid */
+}
+
+.dashboard-container {
+  padding: 48px 32px 60px 32px; /* Even more generous side and vertical space */
+}
+
