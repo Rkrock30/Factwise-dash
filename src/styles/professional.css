@@ -1,0 +1,63 @@
+/* Background and page layout */
+.app-bg {
+  background: linear-gradient(135deg, #f0f3fa 0%, #e4eef6 100%);
+  min-height: 100vh;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+.main-header {
+  background: linear-gradient(90deg, #1976d2 50%, #21c1d6 100%);
+  color: #fff;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 8px rgba(33,97,140,0.15);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.main-content {
+  padding: 32px 20px 40px 20px;
+  max-width: 1500px;
+  margin: 0 auto 40px auto;
+}
+
+.metrics-row {
+  display: flex;
+  gap: 28px;
+  margin: 0 0 22px 0;
+}
+
+.metric-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 1px 8px rgba(0,111,202,0.10);
+  color: #2176d2;
+}
+
+.dashboard-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 18px 36px 18px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.13);
+}
+
+.footer-bar {
+  background: #222e42;
+  color: #fff;
+  font-size: 0.96rem;
+  text-align: center;
+  padding: 16px 0;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  margin-top: 25px;
+}
+
